@@ -127,6 +127,7 @@ public class LofiDao {
                 Lofi.setLink(rs.getString("Link"));
                 //Lofi.setDob(rs.getDate("DOB"));
                 Lofi.setMood(rs.getString("Mood"));
+                Lofi.setDimension(rs.getInt("Dimension")==1?true:false);
 
                 LofiList.add(Lofi);
             }
